@@ -147,7 +147,11 @@ ul {
 
 .hero {
   background-color: #2f303a;
-  height: 600px;
+}
+
+.hero-conteiner {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -159,7 +163,6 @@ ul {
   color: var(--white-title-color);
   width: 696px;
   text-align: center;
-  margin-top: 106px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -269,6 +272,11 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .name-title {
   display: block;
   font-weight: 500;
@@ -276,9 +284,8 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
-  margin-top: 30px;
-  margin-bottom: 10px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .name-text {
@@ -287,7 +294,6 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -310,14 +316,15 @@ ul {
 }
 
 .potfolio-img-block {
-  border-left: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 
 .portfolio-img-item {
   margin: 15px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .portfolio-btn {
@@ -332,6 +339,7 @@ ul {
   cursor: pointer;
   border-radius: 4px;
   border: none;
+  padding: 6px 22px;
 }
 
 .portfolio-btn:hover,
